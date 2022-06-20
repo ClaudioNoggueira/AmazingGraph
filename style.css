@@ -129,7 +129,9 @@ strong {
 header {
   align-items: center;
   padding: 4.8rem;
+  height: 8rem;
   justify-content: space-between;
+  position: relative;
 }
 
 header .title {
@@ -252,9 +254,45 @@ header nav ul li {
   }
 
   header nav {
-    display: none !important;
+    align-items: center;
+    background-color: #fff;
+    height: 100vh;
+    justify-content: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+
+    width: 100%;
+
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  header nav ul li {
+    font-size: 3rem;
+  }
+
+  .nav-open nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .mobile-nav-icon[name="close-icon"] {
+    display: block;
+  }
+
+  .nav-open .mobile-nav-icon[name="menu-icon"] {
+    display: none;
   }
 }
