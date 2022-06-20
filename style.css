@@ -1,0 +1,190 @@
+:root {
+  --font-stach: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #333;
+  font-family: var(--font-stach);
+}
+
+section {
+  padding: 9.6rem 0;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 5.4rem;
+}
+
+.subheading {
+  font-size: 2.4rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.btn {
+  border: none;
+  border-radius: 12px;
+  font-size: 2.4rem;
+  padding: 1.2rem 2.4rem;
+  width: fit-content;
+}
+
+.btn--full {
+  background-color: #d2872c;
+  color: #fff;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 4.8rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.margin-bottom-smaller {
+  margin-bottom: 1.2rem;
+}
+
+.margin-bottom-small {
+  margin-bottom: 2.4rem;
+}
+
+.margin-bottom-medium {
+  margin-bottom: 4.8rem;
+}
+
+.margin-bottom-big {
+  margin-bottom: 6.4rem;
+}
+
+.margin-bottom-bigger {
+  margin-bottom: 8rem;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+header {
+  display: inline-block;
+  padding: 3.6rem 0;
+  width: 100%;
+}
+
+header nav {
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav ul {
+  align-items: center;
+  gap: 2.4rem;
+}
+
+header nav ul li {
+  font-size: 2rem;
+  list-style: none;
+  text-decoration: none;
+}
+
+header .title {
+  color: #d2872c;
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+.hero-section {
+  padding: 4.8rem 0;
+}
+
+.hero-section .hero--grid {
+  grid-template-columns: 2fr 3fr;
+  padding-left: 2.4rem;
+}
+
+.hero-section .text-container {
+  color: #766f68;
+  gap: 3.6rem;
+}
+
+.hero-section .text-container h1 {
+  color: #766f68;
+}
+
+.hero-section .text-container .hero--btn {
+  font-weight: 600;
+  padding: 1.2rem 6.4rem;
+}
+
+.hero-section .image-container {
+  position: relative;
+  z-index: -1;
+}
+
+.hero-section .image-container .image {
+  position: absolute;
+  width: 120%;
+  right: 0.2rem;
+  z-index: -1;
+}
