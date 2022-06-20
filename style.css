@@ -154,6 +154,23 @@ header nav ul li {
   text-decoration: none;
 }
 
+.mobile-nav-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+}
+
+.mobile-nav-icon {
+  color: #766f68;
+  font-size: 4rem;
+}
+
+.mobile-nav-icon[name="close-icon"] {
+  display: none;
+}
+
 .hero-section {
   padding: 4.8rem 0;
 }
@@ -226,5 +243,18 @@ header nav ul li {
 
   .hero-section .text-container .hero--btn {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 29em) {
+  .mobile-nav-button {
+    display: block;
+  }
+
+  header nav {
+    display: none !important;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
   }
 }
